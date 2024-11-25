@@ -19,6 +19,8 @@ namespace Expense_Tracker
 
             var app = builder.Build();
 
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
+
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
             {
