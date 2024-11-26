@@ -14,10 +14,10 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="9.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="Syncfusion.EJ2.AspNet.Core" Version="27.2.3" />
-    <PackageReference Include="Syncfusion.Licensing" Version="27.2.3" />
+    <PackageReference Include="Syncfusion.EJ2.AspNet.Core" Version="27.2.4" />
+    <PackageReference Include="Syncfusion.Licensing" Version="27.2.4" />
   </ItemGroup>
 
 </Project>
