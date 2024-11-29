@@ -1,12 +1,12 @@
 ﻿@model Expense_Tracker.Models.Category
 
 @{
-	ViewData["Title"] = "Create";
+	ViewData["PageTitle"] = Model.Id == 0 ? "Create a new category" : "Edit category";
 }
 
 <div class="row">
 	<div class="col-md-7">
-		<div class="widget p-5">
+		<div class="widget p-5" style="background-color:#212b36">
 			<form asp-action="CreateOrEdit">
 				<div asp-validation-summary="ModelOnly" class="text-danger"></div>
 				<input type="hidden" name="Id" value="@Model.Id" />
@@ -16,7 +16,6 @@
 						<label class="e-btn" for="radioleft">Expense</label>
 						<input type="radio" id="radiomiddle" name="Type" value="Income" checked="@(Model.Type=="Income")" />
 						<label class="e-btn" for="radiomiddle">Income</label>
-						<span asp-validation-for="Type" class="text-danger"></span>
 					</div>
 				</div>
 				<div class="mb-3">

@@ -22,12 +22,12 @@ namespace Expense_Tracker.Controllers
 
 
         // GET: Category/Create
-        public IActionResult CreateOrEdit(int Id=0)
+        public IActionResult CreateOrEdit(int id=0)
         {
-            if (Id == 0)
+            if (id == 0)
                 return View(new Category());
             else
-                return View(_context.Categories.Find(Id));
+                return View(_context.Categories.Find(id));
         }
 
         // POST: Category/Create
@@ -35,7 +35,7 @@ namespace Expense_Tracker.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> CreateOrEdit([Bind("Id,Title,Icon,type")] Category category)
+        public async Task<IActionResult> CreateOrEdit([Bind("Id,Title,Icon,Type")] Category category)
         {
             if (ModelState.IsValid)
             {
